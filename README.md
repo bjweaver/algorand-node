@@ -14,7 +14,7 @@ docker build -t algorand .
 
 
 ```
-docker run -p 8080:8080 --name algorand algorand
+docker run -d -p 8080:8080 --name algorand bjweaver/algorand-node
 ```
 
 ### Status
