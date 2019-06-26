@@ -7,7 +7,7 @@ RUN curl -L https://github.com/algorand/go-algorand-doc/raw/master/downloads/ins
 RUN tar -xf install_master_linux-amd64.tar.gz
 RUN mkdir node
 RUN ./update.sh -i -c stable -p node -d node/data -n
-RUN cp node/genesisfiles/mainnet/genesis.json node/data
+RUN cp node/genesisfiles/testnet/genesis.json node/data
 ENTRYPOINT ["sh", "-c", "./update.sh -u -c stable -p node -d node/data -n && /algorand/node/algod -l 0.0.0.0:8080 -d /algorand/node/data"]
 
 
