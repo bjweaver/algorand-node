@@ -15,6 +15,10 @@ docker build -t algorand .
 
 ```
 docker run -d -p 8080:8080 --name algorand bjweaver/algorand-node
+
+To run on testnet:
+
+docker run -d -p 8080:8080 --name algorand bjweaver/algorand-node:testnet
 ```
 
 ### Status
